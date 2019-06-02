@@ -1,0 +1,146 @@
+:root {
+  --blue-color: #539fee;
+  --white-color: #fbfdff;
+  --animation-func: ease-in-out;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  right: 50px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row-2 {
+  align-items: flex-end;
+}
+
+.row .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 24px;
+}
+
+.row.row-3 {
+  position: absolute;
+  height: 100%;
+}
+
+.row-3 .line {
+  width: 1px;
+  height: 95%;
+  background-color: var(--white-color);
+  margin: 0 33.5px;
+  transform: rotateZ(3.4deg) scale(1);
+  position: relative;
+  top: 10px;
+  left: 14px;
+}
+
+.row-1 .circle {
+  background-color: var(--white-color);
+  box-shadow: 0 0 38px 3px var(--white-color);
+  transform: translate(28px, 0px) scale(0.6, 0.7);
+  filter: blur(4px);
+}
+
+.row-2 .circle {
+  background-color: var(--blue-color);
+  filter: blur(2px);
+  box-shadow: 0 0 38px 3px var(--blue-color);
+}
+
+/* first row animation */
+
+@for $i from 1 through 30 {
+  .row-1 .circle:nth-child(#{$i}) {
+    animation: anim-translate-circle-first
+      5s
+      0.1s *
+      $i *
+      2
+      var(--animation-func)
+      forwards
+      infinite;
+  }
+}
+
+/* second row animation */
+@for $i from 1 through 30 {
+  .row-2 .circle:nth-child(#{$i}) {
+    animation: anim-translate-circle-second
+      5s
+      0.1s *
+      $i *
+      2
+      var(--animation-func)
+      forwards
+      infinite;
+  }
+}
+
+/* line animation */
+@for $i from 1 through 30 {
+  .row-3 .line:nth-child(#{$i}) {
+    animation: anim-scale-line
+      5s
+      0.1s *
+      $i *
+      2
+      var(--animation-func)
+      forwards
+      infinite;
+  }
+}
+
+@keyframes anim-translate-circle-first {
+  50% {
+    transform: translate(0, 480px) scale(1, 1);
+    background-color: var(--blue-color);
+    filter: blur(2px);
+    box-shadow: 0 0 38px 3px var(--blue-color);
+  }
+}
+
+@keyframes anim-translate-circle-second {
+  50% {
+    transform: translate(28px, -480px) scale(0.6, 0.7);
+    filter: blur(4px);
+    background-color: var(--white-color);
+    box-shadow: 0 0 38px 3px var(--white-color);
+  }
+}
+
+@keyframes anim-scale-line {
+  25% {
+    transform: rotateZ(3.4deg) scale(0);
+  }
+
+  50% {
+    transform: rotateZ(3.4deg) scale(1);
+  }
+
+  75% {
+    transform: rotateZ(3.4deg) scale(0);
+  }
+}

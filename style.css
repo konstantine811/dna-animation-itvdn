@@ -1,0 +1,620 @@
+:root {
+  --blue-color: #539fee;
+  --white-color: #fbfdff;
+  --animation-func: ease-in-out;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  right: 50px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.row-2 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.row .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 24px;
+}
+
+.row.row-3 {
+  position: absolute;
+  height: 100%;
+}
+
+.row-3 .line {
+  width: 1px;
+  height: 95%;
+  background-color: var(--white-color);
+  margin: 0 33.5px;
+  -webkit-transform: rotateZ(3.4deg) scale(1);
+          transform: rotateZ(3.4deg) scale(1);
+  position: relative;
+  top: 10px;
+  left: 14px;
+}
+
+.row-1 .circle {
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0 0 38px 3px var(--white-color);
+          box-shadow: 0 0 38px 3px var(--white-color);
+  -webkit-transform: translate(28px, 0px) scale(0.6, 0.7);
+          transform: translate(28px, 0px) scale(0.6, 0.7);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.row-2 .circle {
+  background-color: var(--blue-color);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-box-shadow: 0 0 38px 3px var(--blue-color);
+          box-shadow: 0 0 38px 3px var(--blue-color);
+}
+
+/* first row animation */
+.row-1 .circle:nth-child(1) {
+  -webkit-animation: anim-translate-circle-first 5s 0.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 0.2s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(2) {
+  -webkit-animation: anim-translate-circle-first 5s 0.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 0.4s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(3) {
+  -webkit-animation: anim-translate-circle-first 5s 0.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 0.6s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(4) {
+  -webkit-animation: anim-translate-circle-first 5s 0.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 0.8s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(5) {
+  -webkit-animation: anim-translate-circle-first 5s 1s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 1s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(6) {
+  -webkit-animation: anim-translate-circle-first 5s 1.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 1.2s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(7) {
+  -webkit-animation: anim-translate-circle-first 5s 1.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 1.4s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(8) {
+  -webkit-animation: anim-translate-circle-first 5s 1.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 1.6s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(9) {
+  -webkit-animation: anim-translate-circle-first 5s 1.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 1.8s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(10) {
+  -webkit-animation: anim-translate-circle-first 5s 2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 2s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(11) {
+  -webkit-animation: anim-translate-circle-first 5s 2.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 2.2s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(12) {
+  -webkit-animation: anim-translate-circle-first 5s 2.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 2.4s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(13) {
+  -webkit-animation: anim-translate-circle-first 5s 2.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 2.6s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(14) {
+  -webkit-animation: anim-translate-circle-first 5s 2.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 2.8s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(15) {
+  -webkit-animation: anim-translate-circle-first 5s 3s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 3s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(16) {
+  -webkit-animation: anim-translate-circle-first 5s 3.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 3.2s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(17) {
+  -webkit-animation: anim-translate-circle-first 5s 3.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 3.4s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(18) {
+  -webkit-animation: anim-translate-circle-first 5s 3.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 3.6s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(19) {
+  -webkit-animation: anim-translate-circle-first 5s 3.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 3.8s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(20) {
+  -webkit-animation: anim-translate-circle-first 5s 4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 4s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(21) {
+  -webkit-animation: anim-translate-circle-first 5s 4.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 4.2s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(22) {
+  -webkit-animation: anim-translate-circle-first 5s 4.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 4.4s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(23) {
+  -webkit-animation: anim-translate-circle-first 5s 4.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 4.6s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(24) {
+  -webkit-animation: anim-translate-circle-first 5s 4.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 4.8s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(25) {
+  -webkit-animation: anim-translate-circle-first 5s 5s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 5s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(26) {
+  -webkit-animation: anim-translate-circle-first 5s 5.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 5.2s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(27) {
+  -webkit-animation: anim-translate-circle-first 5s 5.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 5.4s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(28) {
+  -webkit-animation: anim-translate-circle-first 5s 5.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 5.6s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(29) {
+  -webkit-animation: anim-translate-circle-first 5s 5.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 5.8s var(--animation-func) forwards infinite;
+}
+
+.row-1 .circle:nth-child(30) {
+  -webkit-animation: anim-translate-circle-first 5s 6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-first 5s 6s var(--animation-func) forwards infinite;
+}
+
+/* second row animation */
+.row-2 .circle:nth-child(1) {
+  -webkit-animation: anim-translate-circle-second 5s 0.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 0.2s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(2) {
+  -webkit-animation: anim-translate-circle-second 5s 0.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 0.4s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(3) {
+  -webkit-animation: anim-translate-circle-second 5s 0.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 0.6s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(4) {
+  -webkit-animation: anim-translate-circle-second 5s 0.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 0.8s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(5) {
+  -webkit-animation: anim-translate-circle-second 5s 1s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 1s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(6) {
+  -webkit-animation: anim-translate-circle-second 5s 1.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 1.2s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(7) {
+  -webkit-animation: anim-translate-circle-second 5s 1.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 1.4s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(8) {
+  -webkit-animation: anim-translate-circle-second 5s 1.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 1.6s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(9) {
+  -webkit-animation: anim-translate-circle-second 5s 1.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 1.8s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(10) {
+  -webkit-animation: anim-translate-circle-second 5s 2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 2s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(11) {
+  -webkit-animation: anim-translate-circle-second 5s 2.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 2.2s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(12) {
+  -webkit-animation: anim-translate-circle-second 5s 2.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 2.4s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(13) {
+  -webkit-animation: anim-translate-circle-second 5s 2.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 2.6s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(14) {
+  -webkit-animation: anim-translate-circle-second 5s 2.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 2.8s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(15) {
+  -webkit-animation: anim-translate-circle-second 5s 3s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 3s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(16) {
+  -webkit-animation: anim-translate-circle-second 5s 3.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 3.2s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(17) {
+  -webkit-animation: anim-translate-circle-second 5s 3.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 3.4s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(18) {
+  -webkit-animation: anim-translate-circle-second 5s 3.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 3.6s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(19) {
+  -webkit-animation: anim-translate-circle-second 5s 3.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 3.8s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(20) {
+  -webkit-animation: anim-translate-circle-second 5s 4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 4s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(21) {
+  -webkit-animation: anim-translate-circle-second 5s 4.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 4.2s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(22) {
+  -webkit-animation: anim-translate-circle-second 5s 4.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 4.4s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(23) {
+  -webkit-animation: anim-translate-circle-second 5s 4.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 4.6s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(24) {
+  -webkit-animation: anim-translate-circle-second 5s 4.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 4.8s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(25) {
+  -webkit-animation: anim-translate-circle-second 5s 5s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 5s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(26) {
+  -webkit-animation: anim-translate-circle-second 5s 5.2s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 5.2s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(27) {
+  -webkit-animation: anim-translate-circle-second 5s 5.4s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 5.4s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(28) {
+  -webkit-animation: anim-translate-circle-second 5s 5.6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 5.6s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(29) {
+  -webkit-animation: anim-translate-circle-second 5s 5.8s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 5.8s var(--animation-func) forwards infinite;
+}
+
+.row-2 .circle:nth-child(30) {
+  -webkit-animation: anim-translate-circle-second 5s 6s var(--animation-func) forwards infinite;
+          animation: anim-translate-circle-second 5s 6s var(--animation-func) forwards infinite;
+}
+
+/* line animation */
+.row-3 .line:nth-child(1) {
+  -webkit-animation: anim-scale-line 5s 0.2s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 0.2s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(2) {
+  -webkit-animation: anim-scale-line 5s 0.4s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 0.4s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(3) {
+  -webkit-animation: anim-scale-line 5s 0.6s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 0.6s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(4) {
+  -webkit-animation: anim-scale-line 5s 0.8s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 0.8s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(5) {
+  -webkit-animation: anim-scale-line 5s 1s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 1s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(6) {
+  -webkit-animation: anim-scale-line 5s 1.2s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 1.2s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(7) {
+  -webkit-animation: anim-scale-line 5s 1.4s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 1.4s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(8) {
+  -webkit-animation: anim-scale-line 5s 1.6s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 1.6s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(9) {
+  -webkit-animation: anim-scale-line 5s 1.8s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 1.8s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(10) {
+  -webkit-animation: anim-scale-line 5s 2s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 2s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(11) {
+  -webkit-animation: anim-scale-line 5s 2.2s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 2.2s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(12) {
+  -webkit-animation: anim-scale-line 5s 2.4s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 2.4s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(13) {
+  -webkit-animation: anim-scale-line 5s 2.6s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 2.6s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(14) {
+  -webkit-animation: anim-scale-line 5s 2.8s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 2.8s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(15) {
+  -webkit-animation: anim-scale-line 5s 3s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 3s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(16) {
+  -webkit-animation: anim-scale-line 5s 3.2s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 3.2s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(17) {
+  -webkit-animation: anim-scale-line 5s 3.4s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 3.4s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(18) {
+  -webkit-animation: anim-scale-line 5s 3.6s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 3.6s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(19) {
+  -webkit-animation: anim-scale-line 5s 3.8s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 3.8s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(20) {
+  -webkit-animation: anim-scale-line 5s 4s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 4s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(21) {
+  -webkit-animation: anim-scale-line 5s 4.2s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 4.2s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(22) {
+  -webkit-animation: anim-scale-line 5s 4.4s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 4.4s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(23) {
+  -webkit-animation: anim-scale-line 5s 4.6s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 4.6s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(24) {
+  -webkit-animation: anim-scale-line 5s 4.8s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 4.8s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(25) {
+  -webkit-animation: anim-scale-line 5s 5s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 5s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(26) {
+  -webkit-animation: anim-scale-line 5s 5.2s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 5.2s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(27) {
+  -webkit-animation: anim-scale-line 5s 5.4s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 5.4s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(28) {
+  -webkit-animation: anim-scale-line 5s 5.6s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 5.6s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(29) {
+  -webkit-animation: anim-scale-line 5s 5.8s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 5.8s var(--animation-func) forwards infinite;
+}
+
+.row-3 .line:nth-child(30) {
+  -webkit-animation: anim-scale-line 5s 6s var(--animation-func) forwards infinite;
+          animation: anim-scale-line 5s 6s var(--animation-func) forwards infinite;
+}
+
+@-webkit-keyframes anim-translate-circle-first {
+  50% {
+    -webkit-transform: translate(0, 480px) scale(1, 1);
+            transform: translate(0, 480px) scale(1, 1);
+    background-color: var(--blue-color);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    -webkit-box-shadow: 0 0 38px 3px var(--blue-color);
+            box-shadow: 0 0 38px 3px var(--blue-color);
+  }
+}
+
+@keyframes anim-translate-circle-first {
+  50% {
+    -webkit-transform: translate(0, 480px) scale(1, 1);
+            transform: translate(0, 480px) scale(1, 1);
+    background-color: var(--blue-color);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    -webkit-box-shadow: 0 0 38px 3px var(--blue-color);
+            box-shadow: 0 0 38px 3px var(--blue-color);
+  }
+}
+
+@-webkit-keyframes anim-translate-circle-second {
+  50% {
+    -webkit-transform: translate(28px, -480px) scale(0.6, 0.7);
+            transform: translate(28px, -480px) scale(0.6, 0.7);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    background-color: var(--white-color);
+    -webkit-box-shadow: 0 0 38px 3px var(--white-color);
+            box-shadow: 0 0 38px 3px var(--white-color);
+  }
+}
+
+@keyframes anim-translate-circle-second {
+  50% {
+    -webkit-transform: translate(28px, -480px) scale(0.6, 0.7);
+            transform: translate(28px, -480px) scale(0.6, 0.7);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    background-color: var(--white-color);
+    -webkit-box-shadow: 0 0 38px 3px var(--white-color);
+            box-shadow: 0 0 38px 3px var(--white-color);
+  }
+}
+
+@-webkit-keyframes anim-scale-line {
+  25% {
+    -webkit-transform: rotateZ(3.4deg) scale(0);
+            transform: rotateZ(3.4deg) scale(0);
+  }
+  50% {
+    -webkit-transform: rotateZ(3.4deg) scale(1);
+            transform: rotateZ(3.4deg) scale(1);
+  }
+  75% {
+    -webkit-transform: rotateZ(3.4deg) scale(0);
+            transform: rotateZ(3.4deg) scale(0);
+  }
+}
+
+@keyframes anim-scale-line {
+  25% {
+    -webkit-transform: rotateZ(3.4deg) scale(0);
+            transform: rotateZ(3.4deg) scale(0);
+  }
+  50% {
+    -webkit-transform: rotateZ(3.4deg) scale(1);
+            transform: rotateZ(3.4deg) scale(1);
+  }
+  75% {
+    -webkit-transform: rotateZ(3.4deg) scale(0);
+            transform: rotateZ(3.4deg) scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
